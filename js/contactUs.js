@@ -33,7 +33,9 @@ function renderFeedback() {
     for (let i = 0; i < Feedback.gloarray.length; i++) {
         const li = document.createElement('li');
         ul.appendChild(li);
+
         li.textContent = ` - ${Feedback.gloarray[i].name} (${Feedback.gloarray[i].email}): ${Feedback.gloarray[i].message}`;
+
     }
 }
 //localStorage
@@ -42,6 +44,7 @@ function saveToLs() {
     localStorage.setItem('feeds', convertedFb);
 }
 function getLocalStorageFeeds() {
+
 
 
     let data = localStorage.getItem('feeds');
@@ -53,5 +56,9 @@ function getLocalStorageFeeds() {
     }
 }
 getLocalStorageFeeds();
+
 renderFeedback();
+
+
+
 

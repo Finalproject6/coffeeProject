@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    
+    border:solid 5px black;
+    background-color: brown;
+    height:200px;
+}
+main {
+    position: relative;
+}
+
+main #contactInfo {
+    display: inline-block;
+    width:90%;
+    margin-left: 2%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#contactInfo h2 {
+
+    font-size: 50pt;
+    
+    
+}
+#contactInfo div{
+    display: inline-block;
+}
+#contactInfo div *{
+    margin-top: 30px;
+    display: inline-block;
+}
+#
+#contactInfo div p{
+    font-size: 30pt;
+    margin-left: 20px;
+    
+}
+#contactInfo div img {
+
+    width: 45px;
+    
+}
+main #contactInfo img:last-child {
+
+    width: 40%;
+    float: right;
+}
+
+#feeds {
+
+    margin: 50px;
+   
+}
+
+#formFeed {
+    width: 90%;
+    margin-left: 18%;
+    margin-top: 10%;
+
+}
+#formFeed #user {
+    width: 30%;
+   margin-right: 10px; 
+}
+#formFeed #email {
+    width: 30%;
+    
+}
+#formFeed #message {
+    width: 55%;
+    height: 30px;
+    margin-top: 10px;
+    
+}
+#formFeed #message::placeholder{
+    font-size: 20px;
+    
+}
+
+footer{
+    height: 200px;
+    border: solid 5px black;
+    background-color: brown;
+}

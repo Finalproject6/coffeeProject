@@ -42,10 +42,13 @@ function saveToLs() {
     localStorage.setItem('feeds', convertedFb);
 }
 function getLocalStorageFeeds() {
+
     let data = localStorage.getItem('feeds');
     let parsedata = JSON.parse(data);
-    for (let i = 0; i < parsedata.length; i++) {
-        Feedback.gloarray.push(parsedata[i])
+    if (parsedata) {
+        for (let i = 0; i < parsedata.length; i++) {
+            Feedback.gloarray.push(parsedata[i])
+        }
     }
 }
 getLocalStorageFeeds();

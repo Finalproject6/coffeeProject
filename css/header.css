@@ -1,0 +1,62 @@
+/* header{
+
+    display: inline-block;
+} */
+
+*{
+
+    box-sizing: border-box;
+}
+/* body{
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+} */
+header {
+    border:solid white .9px;
+    
+    position: relative;
+width: 80%;
+background-color: #0a0a0a;
+    margin: 0% auto;
+    height: 130px;
+}
+nav ul{
+     display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    
+
+}
+header ul li  {
+
+    padding: 50px;
+
+    display: inline-block;
+    /* float: right; */
+    
+
+}
+
+header ul li a {
+
+    display: block;
+    text-decoration: none;
+  color: #ffffff;
+  font-family:unset;
+  font-size: 27px;
+
+}
+
+nav div img {
+
+    position: absolute;
+   margin: 1%;
+   margin-left: 15px;
+}
+ion-icon {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+  }

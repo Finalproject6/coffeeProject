@@ -40,3 +40,15 @@ console.log("Slide Index value ="+slideIndex);
 
 } 
 showSlides(slideIndex);
+
+
+
+// The start of rendering random fun fact
+
+
+// function Fact(TheFact){
+//   this.TheFact=TheFact;
+//   Fact.gloarray.push(this);
+// }
+// Fact.gloarray=[];
+// let list =getelementsById

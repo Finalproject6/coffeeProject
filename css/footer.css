@@ -1,0 +1,75 @@
+*{
+
+    box-sizing: border-box;
+}
+footer{
+    border:solid white .9px;
+    position: relative;
+    width: 100%;
+    background-color: #0a0a0a;
+    margin: 0% auto;
+    height: 269px;
+    font-family: 'Bebas Neue', cursive;
+}
+ footer nav ul{
+    display: inline-block;
+   position: absolute;
+   right: 5%;
+   top: 2%;
+}
+footer nav ul li  {
+
+    padding: 50px;
+    color: burlywood;
+    display: inline-block;
+}
+footer nav ul li a {
+
+    display: block;
+    text-decoration: none;
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 27px;
+
+}
+footer nav ul li :hover {
+    
+  color: burlywood;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; 
+  }
+footer nav div img {
+float: right;
+    /* position: absolute; */
+   margin: 1%;
+   margin-right: 15px;
+}
+footer ion-icon {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+  }
+footer ion-icon:hover{
+    
+    color: burlywood;
+  }
+
+  footer #contactUs {
+    margin-left: 1%;
+    width: 46%;
+    margin-top: 45px;
+  }
+  footer h2{
+      color: white;
+      font-size: 26px;
+  }
+  
+footer  #contactUs ul{
+      display: block;
+  }
+ footer #contactUs ul li {
+      font-size: 24px;
+    color: white;}
+ footer div img {
+    
+   float:right
+}

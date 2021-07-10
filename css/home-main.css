@@ -1,7 +1,11 @@
 * {box-sizing:border-box}
 body {
-
+ /* background-color: rgb(26, 25, 25);  */
   background-image: url('https://www.ppt-backgrounds.net/thumbs/hd-wood-dark-coffee-image-slides.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: gray; */
+  background-blend-mode:screen;
 }
 
 
@@ -12,7 +16,7 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 90%;
   position: relative;
   margin: auto;
 }
@@ -107,49 +111,57 @@ body {
   to {opacity: 1}
 }
 
-#After-SlideShow{
-
-  background-color: blueviolet;
+#Before-SlideShow{
+  margin-bottom: 52%;
+  /* background-color: rgb(26, 25, 25);  */
 }
-
 #main-hours-content {
   margin-top: 15%;
   margin-bottom: 15%;
-  background-color: #865439;
+  /* background-color: #865439; */
   display: inline block;
   position: relative;
+ 
 }
 
 #left-img {
 
   margin-left: 5%;
-  width: 45%;
+  width: 46%;
+  padding-bottom: 3%;
+  margin-top: -286px;
   /* background-color: rgb(235, 192, 192); */
   /* border: solid black; */
-  padding: 100px;
+  padding: 91px;
   position: absolute;
-  height: 450px;
+  /* height: 450px; */
   
 
 }
 #Right-img{
-
-  
-  margin-right: 5%;
-    
-  width: 45%;
-  padding: 100px;
-  position: absolute;
-  height: 450px;
-  /* margin-top :-30px */
-
-/* background-color: rgb(166, 166, 243); */
-right: 0%;
+border:solid black;
+ margin-right: 5%;
+    width: 33%;
+    padding: 9px;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    position: absolute;
+    /* height: 450px; */
+    margin-top: -195px;
+    /* background-color: rgb(166, 166, 243); */
+    right: 0%;
+     /* margin-bottom: 20%; */
+background-image:url(../images/HomeImages/coffeeBlack.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: gray;
+background-blend-mode:screen;
 }
   article  h2 {
     font-size: 50px;
     color:white ;
-    margin-top: -300px;
+    margin-top: 17px;
+
   }
 
 article p {
@@ -162,16 +174,36 @@ article p {
 
  #Right-img h2 {
 
-  font-size: 50px;
-  color:white ;
-  margin-top: -300px;
+  font-size: 40px;
+  color:black;
+  
   
 
 } 
 
 #Right-img ul {
-  font-size: 50px;
-  color:white ;
-  margin-top: -250px;
-  
+  font-size: 27px;
+  color:#0a0a0a;
+  /* margin-top: -250px; */
+  text-shadow: 2px 2px 4px black;
+}
+#gif .text{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  text-decoration : none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* color: burlywood; */
+  top: 50%;
+  /* text-shadow: 2px 2px 4px black; */
+}
+
+#gif ion-icon {
+font-size: 50%;
+
 }

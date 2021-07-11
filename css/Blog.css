@@ -140,5 +140,7 @@
     width: 100%;
   }
   .card1 .back {
-    transform: rotateY(180deg);
+    transform:rotateY(180deg);
+    
+
   }

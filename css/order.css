@@ -138,6 +138,84 @@ main div div button {
     border: solid white 3px;
     background-color: burlywood;
 }
+#print div{
+    /* margin-left: 50px; */
+    position: relative;
+    margin-left: 10%;
+    margin-top: 30px;
+    /* border: solid 3px white; */
+    width: 900px;
+    padding-left: 20px;
+    background-color: burlywood;
+   
+
+}
+
+#print div *{
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+#print div img {
+    width: 200px;
+    /* margin-top: 15px; */
+    
+
+}
+#print div #increase {
+   
+     width: 40px;
+    height: 40px; 
+    background-image: url(../images/order/plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;  
+    /* position: relative;
+    top: -80px;
+    right: -80px;   */
+
+}
+#print div #decrease {
+   
+     width: 40px;
+    height: 40px; 
+    background-image: url(../images/order/minus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;  
+    /* position: relative;
+    top: -80px;
+    right: -80px;   */
+
+}
+#print div #delete {
+   
+     width: 40px;
+    height: 40px; 
+    background-image: url(../images/order/cancel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;  
+    /* position: relative;
+    top: -80px;
+    right: -80px;   */
+
+}
+
+#print div h4 {
+    width: 250px;
+    font-size: 18pt;
+    position: relative;
+    top: -80px;
+    left: 20px;
+}
+
+#print div p {
+    padding-left: 20px;
+    font-size: 25pt;
+    /* margin-top: 10px; */
+}
+
 footer {
     width: 100%;
     height: 200px;

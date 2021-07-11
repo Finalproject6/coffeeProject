@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD
-=======
 
 
 <!-- ============>> googleFont <<<==================== -->
@@ -16,40 +14,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+
 <!-- ======================================= -->
 
->>>>>>> 2ea4b1b1397ded2496e6c64014aed745471ab8a5
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/contactUsMain.css">
 </head>
 
 <body>
-    <header>
+    <header style="width: 100%;">
+        <nav>
+            <div>
+                <img src="../images/HomeImages/Logo-test.png" width="100px" height="100px">
+            </div>
+            <ul>
+                <li> <a href="../Index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Home
+                    </a></li>
+                <li><a href="../pages/order.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Store
+                    </a></li>
+                <li> <a href="../pages/Blog.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Blog
+                    </a></li>
+                <li><a href="contactUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
+                    </a></li>
+                <li><a href="../pages/AboutUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> About Us
+                    </a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
-<<<<<<< HEAD
-        <section id="contactInfo">
-
-            <h2>Contact us</h2>
-
-            <div>
-                <img src="../images/contactUS/mail.svg">
-                <p>Coffee@mail.com</p>
-            </div>
-            <div>
-                <img src="../images/contactUS/call.svg">
-                <p>+05-666666</p>
-            </div>
-
-            
-            
-            <img src="https://www.lasalleamman.com/sites/default/files/2020-04/contact-us.jpg">
-        </section>
-
-=======
         <section id="video">
-            <img src="../images/contactUS/i-love-coffee-coffee-is-life.gif" alt="i love coffee">
+            <!-- <img src="../images/contactUS/i-love-coffee-coffee-is-life.gif" alt="i love coffee"> -->
+
+            <h1 class="ml5">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters letters-left">Feedback</span>
+                  <span class="letters ampersand">&amp;</span>
+                  <span class="letters letters-right">Opinion</span>
+                  <span class="line line2"></span>
+                </span>
+              </h1>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
         </section>
 
         <!-- <section id="contactInfo">
@@ -72,7 +88,6 @@
                 
             </div>    
         </section> -->
->>>>>>> 2ea4b1b1397ded2496e6c64014aed745471ab8a5
 
         <section id="feeds">
             <div id="inputFeedback">
@@ -80,12 +95,12 @@
                 <form id="formFeed">
                     <fieldset>
                         <legend>Feedback</legend>
-                        <input type="text" id="user" placeholder="Username">
+                        <input type="text" id="user" placeholder="Name">
 
                         <input type="email" id="email" placeholder="example@email">
 
-                        <input type="text" id="message" placeholder="message">
-
+                        <input type="text" id="message" placeholder="Message">
+                        <br>
                         <button id="btn">Submit</button>
                     </fieldset>
                 </form>
@@ -95,15 +110,13 @@
                 </ul>
             </div>
         </section>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 2ea4b1b1397ded2496e6c64014aed745471ab8a5
     </main>
     <footer>
     </footer>
     <script src="../js/contactUs.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>

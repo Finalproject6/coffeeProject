@@ -1,87 +1,195 @@
 *{
     box-sizing: border-box;
+    max-width: 100%;
 }
-header{
+body{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
     
-    border:solid 5px black;
-    background-color: brown;
-    height:200px;
 }
+header {
+    border:solid white .9px;
+    
+    position: relative;
+    width: 100%;
+    background-color: #0a0a0a;
+    margin: 0% auto;
+    height: 130px;
+}
+
 main {
+    width: 100%;
     position: relative;
-}
-
-main #contactInfo {
-    display: inline-block;
-    width:90%;
-    margin-left: 2%;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-#contactInfo h2 {
-
-    font-size: 50pt;
-    
+    background-image: url(../images/contactUS/contactUsMainImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: screen;
     
 }
-#contactInfo div{
-    display: inline-block;
-}
-#contactInfo div *{
+#video img {
     margin-top: 30px;
+    margin-left: 40%;
+}
+
+#contactInfo {
+    position: relative;
+    /* border: solid 3px; */
     display: inline-block;
-}
-#
-#contactInfo div p{
-    font-size: 30pt;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: 10%; 
+    margin-top: 20px;
+    /* margin-bottom: 50px;  */
     
 }
-#contactInfo div img {
-
-    width: 45px;
+#contactInfo div {
+    display: inline-block;
     
 }
-main #contactInfo img:last-child {
-
+#contactUsImg {
+    /* background-color: green; */
     width: 40%;
-    float: right;
+    /* float: right; */
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    
+
+}
+#contactInfo h2 {
+    font-size: 60pt;   
+    
 }
 
-#feeds {
+#contactInfo div {
+    width: 50%;
+    
+    display: inline-block;  
 
-    margin: 50px;
-   
+ 
+}
+#contactInfo div:first-child {
+    width: 45%;
+    margin-top: 20px;
+    /* padding-bottom: 100px; */
+
+}
+#contactInfo div:last-child {
+    width: 45%;
+    /* margin-top: 50px; */
+    
+}
+#contactInfo div ul * {
+    display: inline-block;
+ 
+
+}
+#contactInfo div ul {
+    margin-top: 20px;
+}
+
+#contactInfo div ul img {
+    width: 40px;
+
+    
+}
+#contactInfo div ul p {
+    font-size: 30pt;
+    padding-left: 10px;
+    /* padding-bottom: 50px; */
+  
+}
+#feeds {
+    padding: 50px;
 }
 
 #formFeed {
     width: 90%;
-    margin-left: 18%;
-    margin-top: 10%;
+    margin-left: 20%;
+    margin-top: 5%;
 
 }
 #formFeed #user {
-    width: 30%;
+    width: 45%;
    margin-right: 10px; 
+   margin-left: 10px;
 }
 #formFeed #email {
-    width: 30%;
+    margin-left: 10px;
+    width: 45%;
     
 }
 #formFeed #message {
-    width: 55%;
+    width: 80%;
     height: 30px;
     margin-top: 10px;
+    margin-left: 10px;
     
 }
 #formFeed #message::placeholder{
-    font-size: 20px;
+    font-size: 20px;    
+} 
+#formFeed #btn {
+    font-size: 13pt;
+    border-radius: 20%;    
+    margin-left: 10px;
+}
+
+#listFeedback {
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 50px;
+    background-image: url(../images/contactUS/list-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+   
+    
+}
+#listFeedback ul {
+    height: 300px;
+    overflow: scroll;
+}
+#listFeedback ul::-webkit-scrollbar {
+    width: 5px;
+}
+#listFeedback ul::-webkit-scrollbar-thumb{
+    background-color: rgb(114, 53, 53);
+    border: solid 5px rgb(75, 72, 72);
     
 }
 
+
+#listFeedback ul li {
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 1.4;
+    font-family: 'Indie Flower', cursive;
+}
+ #formFeed fieldset {
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 10px;    
+    width: 60%;
+    align-content: center;   
+
+
+} 
+ #formFeed fieldset legend {
+    color: antiquewhite;
+    font-size: 20pt;
+     /* text-align: center;  */
+     text-shadow: 2px 2px 4px black;
+} 
+
+
+
 footer{
+    width: 100%;
     height: 200px;
-    border: solid 5px black;
-    background-color: brown;
+    /* margin-top: 50px; */
+    /* border: solid 5px black; */
+    background-color: rgb(5, 5, 5);
 }

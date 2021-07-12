@@ -149,8 +149,8 @@ font-size: 50pt;
   background-image:url('../images/HomeImages/coffeeBlack.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-/* background-color: rgb(175, 175, 175); */
-/* background-blend-mode:screen; */
+background-color: rgba(7, 7, 7, 0.925); 
+background-blend-mode:darken; 
 border: solid white;
 color: white;
 text-shadow: 2px 2px 4px black ;

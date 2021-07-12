@@ -257,6 +257,7 @@ position: absolute;
   background-image:url('../images/HomeImages/coffeeBlack.jpg');
 background-repeat: no-repeat;
 background-size: cover;
+
 background-color: rgba(2, 2, 2, 0.747);
 background-blend-mode:darken;
 border: solid white 1px ;

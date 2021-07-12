@@ -115,18 +115,18 @@ let paragraphText = document.getElementById('recommend-text');
 function randomDrinkMorning() {
   return Math.floor(Math.random() * (imagMorningArray.length ));}
   
-function randomDrinkevening() {
-  return Math.floor(Math.random() * (imagEveningArray.length ));}
+// function randomDrinkevening() {
+//   return Math.floor(Math.random() * (imagEveningArray.length ));}
 
-
+let x;
 function renderDrink(){
-
+x=randomDrinkMorning();
 currentTime= d.getHours();
 if ( currentTime<=12){
 
-  imageElement.setAttribute('src',imagMorningArray[randomDrinkMorning()]);
+  imageElement.setAttribute('src',imagMorningArray[x]);
   headdingText.textContent = " IT's Morning Time !";
-  paragraphText.textContent = pMorningArray[randomDrinkMorning()];
+  paragraphText.textContent = pMorningArray[x];
 
   
 }
@@ -134,9 +134,9 @@ if ( currentTime<=12){
 else if (currentTime >12){
 
   
-    imageElement.setAttribute('src',imagEveningArray[randomDrinkevening()]);
+    imageElement.setAttribute('src',imagEveningArray[x]);
     headdingText.textContent = " IT's Evening Time!";
-    paragraphText.textContent = pEveningArray[randomDrinkevening()];
+    paragraphText.textContent = pEveningArray[x];
        
   }
 }

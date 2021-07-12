@@ -5,17 +5,20 @@
   /* Add a gray background color with some padding */
   body {
     font-family: Arial;
-    padding: 20px;
-    background-color: burlywood;
+    /* padding: 20px; */
+    /* background-color: burlywood; */
+    background-image: url(../images/Blog-img/cofeebackground.jpg);
+    width: 100%;
   
   }
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+   padding: 30px;
     font-size: 40px;
     text-align: center;
     background: white;
+  
   }
   
   /* Create two unequal columns that floats next to each other */
@@ -41,11 +44,45 @@
   
   /* Add a card effect for articles */
   .card {
-     background-color: white;
+    background-image: url(../images/Blog-img/Coffe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-color: rgb(143, 143, 143); 
+    background-blend-mode: screen;
      padding: 20px;
      margin-top: 20px;
+     font-size: large;
+     font-family: 'Times New Roman', Times, serif;
+     /* font-weight:400; */
+     display: inline-block;
+     line-height: 32px;
+     font-weight:500;
   }
-  
+  img {
+    /* border-radius: 100%; */
+    /* width: 100px;
+    height: 100px; */
+    /* object-fit: cover;
+    float: left; */
+   /* margin-left: 200px; */
+   display: inline-block;
+  }
+
+  #tital
+  {
+   font-weight: bolder;
+   font-size: larger;
+
+  }
+
+#paragaphstylee{
+  display: inline-block;
+  display: inline-block;
+  line-height: 32px;
+}
+
+
+
   /* Clear floats after the columns */
   .row:after {
     content: "";

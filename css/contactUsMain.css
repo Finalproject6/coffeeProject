@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+}
+header {
+    border:solid white .9px;
+    
+    position: relative;
+    width: 100%;
+    background-color: #0a0a0a;
+    margin: 0% auto;
+    height: 130px;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    background-image: url(../images/contactUS/pexels-photo-7792863.jpeg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-color: rgba(7, 7, 7, 0.952);
+    background-blend-mode:darken
+  
+    
+}
+#video{
+    /* background-color: grey; */
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+#video img {
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+#contactInfo {
+    position: relative;
+    /* border: solid 3px; */
+    display: inline-block;
+    width: 100%;
+    margin-left: 10%; 
+    margin-top: 20px;
+    /* margin-bottom: 50px;  */
+    
+}
+#contactInfo div {
+    display: inline-block;
+    
+}
+#contactUsImg {
+    /* background-color: green; */
+    width: 40%;
+    /* float: right; */
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    
+
+}
+#contactInfo h2 {
+    font-size: 60pt;   
+    
+}
+
+#contactInfo div {
+    width: 50%;
+    
+    display: inline-block;  
+
+ 
+}
+#contactInfo div:first-child {
+    width: 45%;
+    margin-top: 20px;
+    /* padding-bottom: 100px; */
+
+}
+#contactInfo div:last-child {
+    width: 45%;
+    /* margin-top: 50px; */
+    
+}
+#contactInfo div ul * {
+    display: inline-block;
+ 
+
+}
+#contactInfo div ul {
+    margin-top: 20px;
+}
+
+#contactInfo div ul img {
+    width: 40px;
+
+    
+}
+#contactInfo div ul p {
+    font-size: 30pt;
+    padding-left: 10px;
+    /* padding-bottom: 50px; */
+  
+}
+#feeds {
+    padding: 50px;
+}
+
+#formFeed {
+    width: 90%;
+    /* margin-left: 20%; */
+    margin-top: 5%;
+
+}
+#formFeed #user {
+    width: 47%;
+   margin-right: 10px; 
+   margin-left: 10px;
+}
+#formFeed #email {
+    margin-left: 10px;
+    width: 47%;
+    
+}
+#formFeed #message {
+    width: 97%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+#formFeed #message::placeholder{
+    font-size: 20px;    
+} 
+#formFeed #btn {
+    font-size: 13pt;
+    border-radius: 20%;    
+    margin-left: 45% ;
+    margin-top: 5%;
+}
+
+#listFeedback {
+    width: 55%;
+    margin-left: 22%;
+    margin-top: 50px;
+    background-image: url(../images/contactUS/list-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+   
+    
+}
+#listFeedback ul {
+    height: 400px;
+    overflow: scroll;
+}
+#listFeedback ul::-webkit-scrollbar {
+    width: 5px;
+}
+#listFeedback ul::-webkit-scrollbar-thumb{
+    background-color: rgb(114, 53, 53);
+    border: solid 5px rgb(75, 72, 72);
+    
+}
+
+
+#listFeedback ul li {
+    margin-top: 10px;
+    margin-left: 40px;
+    line-height: 1.4;
+    font-family: 'Zen Loop', cursive;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+ #formFeed fieldset {
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 10px;    
+    width: 60%;
+    margin-left: 25%;
+    align-content: center;  
+    padding-top: 20px; 
+
+
+} 
+ #formFeed fieldset legend {
+    color: antiquewhite;
+    font-size: 20pt;
+     /* text-align: center;  */
+     text-shadow: 2px 2px 4px black;
+} 
+
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    /* margin-top: 50px; */
+    /* border: solid 5px black; */
+    background-color: rgb(5, 5, 5);
+}
+
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #fffefe;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- =============>> google fonts <<============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- =============>> google fonts <<============== -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+
+<body>
+    <header style="width: 100%;">
+        <nav>
+            <div>
+                <img src="../images/HomeImages/Logo-test.png" width="100px" height="100px">
+            </div>
+            <ul>
+                <li> <a href="../Index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Home
+                    </a></li>
+                <li><a href="../pages/order.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Store
+                    </a></li>
+                <li> <a href="../pages/Blog.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Blog
+                    </a></li>
+                <li><a href="../pages/contactUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
+                    </a></li>
+                <li><a href="../pages/AboutUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> About Us
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- <img id="mainHeadPic" src="../images/order/headerOrderPage.jpg" alt="header img"> -->
+        <div id="ourProduct">
+        </div>
+        <h2>Our Product</h2>
+
+        <div id="allProduct">
+            <a href="#print">
+                <img src="../images/order/online-shop.png" alt="cart img">
+            </a>
+            <div class="product">
+                <img class="photo" src="../images/order/31301_Mild_250g_Macinato-MOKA.jpg" alt="1st coffee img">
+                <p class="price">10.00 $</p>
+                <h3 class="name">Mild Coffee</h3>
+                <p class="details">Super fine grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro1">ADD CART</button>
+            </div>
+            <div class="product">
+                <img class="photo" src="../images/order/bleeding utopia.jpg" alt="1st coffee img">
+                <p class="price">12.00 $</p>
+                <h3 class="name">Black Cofee</h3>
+                <p class="details">Medium-fine grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro2">ADD CART</button>
+            </div>
+            <div class="product">
+                <img class="photo" src="../images/order/TH-Coarse-Grind-300g-Medium.jpg" alt="1st coffee img">
+                <p class="price">14.00 $</p>
+                <h3 class="name">Blue Mountain Coffee</h3>
+                <p class="details">Coarse grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro3">ADD CART</button>
+            </div>
+            <div class="product">
+                <img class="photo" src="../images/order/zoroy_the_finesse_arabica_ground_coffee.jpg"
+                    alt="1st coffee img">
+                <p class="price">16.00 $</p>
+                <h3 class="name">zoroy Arabic Coffee</h3>
+                <p class="details">Medium-coarse grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro4">ADD CART</button>
+            </div>
+            <div class="product">
+                <img class="photo" src="../images/order/31506_MiTul-bio_250g_Macinato-MOKA.jpg" alt="1st coffee img">
+                <p class="price">18.00 $</p>
+                <h3 class="name">Mitul Coffee</h3>
+                <p class="details">Fine grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro5">ADD CART</button>
+            </div>
+            <div class="product">
+                <img class="photo" src="../images/order/Bulletproof.jpg" alt="1st coffee img">
+                <p class="price">25.00 $</p>
+                <h3 class="name">Bulletproof Coffee</h3>
+                <p class="details">Medium grounds</p>
+                <p class="size">1 pack is 250g</p>
+                <button id="pro6">ADD CART</button>
+            </div>
+        </div>
+        <div id="form">
+            <form id="form">
+                <fieldset>
+                    <legend>your Adress</legend>
+                    <input type="text" required id="name" placeholder="Name">
+
+                    <input type="phone" id="phone" placeholder="Phone Number">
+
+                    <input type="text" id="adress" placeholder="city/street/bulding num/appart num">
+                    <br>
+
+                </fieldset>
+            </form>
+
+        </div>
+        <div id="print">
+            <!-- <div>
+                <img src="" alt="">
+                <h4>name</h4>
+                <input type="text">
+                <p></p>
+                <button></button>
+                
+                
+            </div> -->
+
+        </div>
+        <div id="totalPrice">
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

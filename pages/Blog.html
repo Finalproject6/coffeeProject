@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- ============= google fonts ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<!-- ============================================================ -->
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -14,21 +24,21 @@
   <header style="width: 100%;">
     <nav>
         <div>
-            <img id="logo" src="images/HomeImages/logo_transparent.png" width="160px" height="160px">
+            <img id="logo" src="../images/HomeImages/logo_transparent.png" width="160px" height="160px">
             <ul>
-                <li> <a href="Index.html">
+                <li> <a href="../Index.html">
                         <ion-icon name="cafe-outline"></ion-icon> Home
                     </a></li>
-                <li><a href="pages/order.html">
+                <li><a href="order.html">
                         <ion-icon name="cafe-outline"></ion-icon> Store
                     </a></li>
-                <li> <a href="pages/Blog.html">
+                <li> <a href="Blog.html">
                         <ion-icon name="cafe-outline"></ion-icon> Blog
                     </a></li>
-                <li><a href="pages/contactUs.html">
+                <li><a href="contactUs.html">
                         <ion-icon name="cafe-outline"></ion-icon> FeedBack
                     </a></li>
-                <li><a href="pages/AboutUs.html">
+                <li><a href="AboutUs.html">
                         <ion-icon name="cafe-outline"></ion-icon> About Us
                     </a></li>
             </ul>
@@ -36,6 +46,7 @@
 </header>
 <main>
    <div id="first">
+     <img src="../images/Blog-img/new_ca_onthego_1_2_1.jpg">
        <h1>Know more about coffee</h1>
    </div>
    <div id="sec"> 
@@ -88,26 +99,27 @@
         </form>
         
     </div> 
+
+    
 </main>
+
 <footer>
-  <div id="contactUs">
+  <div id="contactUs"  style="margin-bottom:126px;">
       <h2>CONTACT US</h2>
-      <img id="footer-logo" src="images/HomeImages/logo_transparent.png" width="250px" height="250px" alt="">
+      <img id="footer-logo" src="../images/HomeImages/logo_transparent.png" width="250px" height="250px" alt="">
       <br>
-      <ul>
-          <li>
-              <ion-icon name="call-sharp"></ion-icon>+9627900000000
-          </li>
+      <ul style="list-style: none;">
+          <li style="margin-top:-60px;"><ion-icon name="call-sharp"></ion-icon>+9627900000000</li>
           <br>
-          <li>
-              <ion-icon name="mail"></ion-icon>coffee-addicts@gmail.com
-          </li>
+          <li><ion-icon name="mail"></ion-icon>coffee-addicts@gmail.com</li>
           <br>
       </ul>
   </div>
-  <div id="scrup" style="background-color: black; height: 100px;">
+  <div id="scrup" style="background-color: black; height: 100px; margin-top: -5%">
+
       <p style="color: white;"> </p>
-      <ul id="last-footer">
+
+      <ul id="last-footer" style="list-style: none;">
           <li style="color: white;"> &copy;2021 Coffee Addicts - All rights reserved !</li>
           <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
               <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -116,5 +128,7 @@
       </ul>
   </div>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

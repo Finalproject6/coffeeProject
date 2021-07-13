@@ -6,16 +6,20 @@
     margin: 0 auto;
     background-color: white;
   }
-  #first {
-    background-image: url('../images/Blog-img/new_ca_onthego_1_2_1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  #first img {
+    width: 100%;
+    /* background-image: url('../images/Blog-img/new_ca_onthego_1_2_1.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
   }
   #first h1{
     text-align: center;
-    font-size: 50pt;
-    padding: 250px 0;
+    font-size: 60px;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    /* padding: 100px 0; */
     color: beige;
     /* text-shadow: 2px 2px 4px black; */
   }
@@ -26,6 +30,11 @@
     text-align: center;
     font-size: 30pt;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+  h2{
+    font-size: 40pt;
+    color: #A9855B;
+    font-family: "Muli Regular", arial, serif;
   }
   #blockOne {
   
@@ -47,15 +56,14 @@
     width: 30%;
   } */
   #textOne {
-     line-height: 1.3; 
+     line-height: 1.2; 
     font-size: 21pt;
     display: inline-block;
     margin-left: 75px;
     position: absolute;
     width: 30%;
-    top: 0%;
+    top: -15%;
     letter-spacing: 1.5px;
-    /* font-family:"Muli Regular", arial, serif; */
     color: #787878;
   
   }
@@ -90,12 +98,18 @@
     display: inline-block;
     margin-left: 10%;
     position: absolute;
-    width: 30%;
-    top: 0%;
+    width: 30%; 
     letter-spacing: 1.5px;
     color: #787878;
   
   }
+  #textTwo p {
+    position: absolute;
+    top: 75%;
+  }
+   #textTwo h2{
+  margin-top: -20px;  
+  } 
   #photoTwo{
     display: inline-block;
     width:45%;
@@ -126,13 +140,13 @@
   
   #textThree {
   
-    line-height: 1.3; 
+    line-height: 1.2; 
     font-size: 21pt;
     display: inline-block;
     margin-left: 75px;
     position: absolute;
     width: 30%;
-    top: 0%;
+    top: -13%;
     letter-spacing: 1.5px;
     color: #787878;
     
@@ -188,8 +202,3 @@
     color: bisque;
   }
   
-  h2{
-    font-size: 40pt;
-    color: #A9855B;
-    font-family: "Muli Regular", arial, serif;
-  }

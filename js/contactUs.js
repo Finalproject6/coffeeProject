@@ -29,7 +29,19 @@ function handelSubmit(event) {
 console.log(Feedback.gloarray);
 const ul = document.getElementById('unlist');
 //render feeds
+
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+console.log(getRandomColor());
 function renderFeedback() {
+
     for (let i = 0; i < Feedback.gloarray.length; i++) {
         const li = document.createElement('li');
         const li2 = document.createElement('li');
@@ -42,6 +54,7 @@ function renderFeedback() {
         li2.setAttribute("style",colorR);
 
       }
+
 
     
 }

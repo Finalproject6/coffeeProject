@@ -168,7 +168,10 @@ main {
 #listFeedback ul {
     height: 400px;
     overflow: scroll;
+    /* padding-top: 50px; */
+    
 }
+
 #listFeedback ul::-webkit-scrollbar {
     width: 5px;
 }
@@ -178,8 +181,15 @@ main {
 }
 
 
+#unlist li:first-child {
+
+    padding-top: 30px;
+}
 #listFeedback ul li {
+
     margin-top: 5px;
+
+
     margin-left: 40px;
     line-height: 1.4;
     font-family: 'Merienda', cursive; 
@@ -193,6 +203,7 @@ main {
     font-family: 'Merienda', cursive;
     font-size: 15pt;
     font-weight: bolder;
+    
 }
 
  #formFeed fieldset {

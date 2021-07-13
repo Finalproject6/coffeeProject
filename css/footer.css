@@ -65,3 +65,9 @@ padding-top: 20px;
 
   display: inline-block;
 } */
+#footer-logo{
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+
+}

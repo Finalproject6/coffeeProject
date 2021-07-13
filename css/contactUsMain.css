@@ -9,7 +9,7 @@ body{
     margin: 0 auto;
     
 }
-header {
+/* header {
     border:solid white .9px;
     
     position: relative;
@@ -17,7 +17,7 @@ header {
     background-color: #0a0a0a;
     margin: 0% auto;
     height: 130px;
-}
+} */
 
 main {
     width: 100%;
@@ -147,6 +147,7 @@ main {
     border-radius: 20%;    
     margin-left: 45% ;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 #listFeedback {
@@ -170,7 +171,6 @@ main {
 #listFeedback ul::-webkit-scrollbar-thumb{
     background-color: rgb(114, 53, 53);
     border: solid 5px rgb(75, 72, 72);
-    
 }
 
 

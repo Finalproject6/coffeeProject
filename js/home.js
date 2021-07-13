@@ -1,6 +1,6 @@
 var slideIndex = 1;
 
-console.log("First value of slide index = " + slideIndex);
+// console.log("First value of slide index = " + slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -17,23 +17,23 @@ function showSlides(n) {
   var i; // defined
   var slides = document.getElementsByClassName("mySlides"); // slides.length = 3 , slide = array of  html object / div 1 & 2 & 3
 
-  console.log("length of slides " + slides.length);
+  // console.log("length of slides " + slides.length);
 
   var dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) { slideIndex = 1 } // to make the slide index not more than 3 
-  console.log("n value =" + n);
+  // console.log("n value =" + n);
   if (n < 1) { slideIndex = slides.length }
   console.log("Slide Index value =" + slideIndex);
 
   for (i = 0; i < slides.length; i++) { // 
     slides[i].style.display = "none";
-    console.log("slides[i]" + slides[0]);
+    // console.log("slides[i]" + slides[0]);
   }
 
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
-    console.log("dots[i]" + dots[i]);
+    // console.log("dots[i]" + dots[i]);
   }
   slides[slideIndex - 1].style.display = "block";// slidIndex[0] , 
   dots[slideIndex - 1].className += " active";
@@ -99,3 +99,47 @@ funFact.appendChild(content);
 content.textContent=globArray[randomFact()];
 
 // console.log(randomFact());
+
+
+let d;
+d = new Date();
+let imagMorningArray=['images/HomeImages/traditional-drip.png','images/HomeImages/home-3-icon-img-1.png','images/HomeImages/capuccino.png']; 
+let imagEveningArray=['images/HomeImages/home-3-icon-img-5.png','images/HomeImages/home-3-icon-image-6.png','images/HomeImages/latte2.png']; 
+let pMorningArray = ['Enjoy your morning with this traditional trurkish cofee drip','Enjoy your morning with a cup of Espresso, Waking up is 100% guarenteed','Do you love morning capuccino? Yes, but you still did not figure it out']
+let pEveningArray = ['Nothing is better than a FRAPE at the evening, enjoy it','Set your mood to be high, Get your self a cup MOCHA ','LATE, it will alwayes fit for the evening time ']
+let imageElement = document.getElementById('imageDrink');
+let headdingText = document.getElementById('TimeTag');
+let paragraphText = document.getElementById('recommend-text');
+
+
+function randomDrinkMorning() {
+  return Math.floor(Math.random() * (imagMorningArray.length ));}
+  
+// function randomDrinkevening() {
+//   return Math.floor(Math.random() * (imagEveningArray.length ));}
+
+let x;
+function renderDrink(){
+x=randomDrinkMorning();
+currentTime= d.getHours();
+if ( currentTime<=12){
+
+  imageElement.setAttribute('src',imagMorningArray[x]);
+  headdingText.textContent = " IT's Morning Time !";
+  paragraphText.textContent = pMorningArray[x];
+
+  
+}
+
+else if (currentTime >12){
+
+  
+    imageElement.setAttribute('src',imagEveningArray[x]);
+    headdingText.textContent = " IT's Evening Time!";
+    paragraphText.textContent = pEveningArray[x];
+       
+  }
+}
+renderDrink();
+
+

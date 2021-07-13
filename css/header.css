@@ -38,6 +38,13 @@ header ul li  {
     
 
 }
+#logo{
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  margin-top: -35px;
+}
 
 header ul li a {
 

@@ -1,193 +1,195 @@
-* {
-    box-sizing: border-box;
-  
+*{
+  box-sizing: border-box;
   }
-  
-  /* Add a gray background color with some padding */
-  body {
-    font-family: Arial;
-    /* padding: 20px; */
-    /* background-color: burlywood; */
-    background-image: url(../images/Blog-img/back2.jpg);
+  body{
     width: 100%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  #first {
+    background-image: url('../images/Blog-img/new_ca_onthego_1_2_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-background-attachment: fixed;
-  
+    background-attachment: fixed;
   }
-  
- 
- 
-  .flip-box {
-    background-color: transparent;
-    width: 300px;
-    /* height: 200px; */
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    display:inline-block;
+  #first h1{
+    text-align: center;
+    font-size: 50pt;
+    padding: 250px 0;
+    color: beige;
+    /* text-shadow: 2px 2px 4px black; */
   }
+  #sec{
+    margin-top: 10%;
+  }
+  #sec p {
+    text-align: center;
+    font-size: 30pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+  #blockOne {
   
-  .flip-box-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    margin-top: 10%;
   }
   
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  .flip-box-back {
-    background-color: #555;
-    color: white;
-    transform: rotateY(180deg);
-  }
-
-
-
-  
-  /* Header/Blog Title
-  .header {
-   padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-  
-  } */
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 100%;
-  }
-  
-
-
-  #pa{
-
-   margin-left: 500px;
-    /* display:inline; */
-  }
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-image: url(../images/Blog-img/Coffe.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-     background-color: rgb(143, 143, 143); 
-    background-blend-mode: screen;
-     padding: 20px;
-     margin-top: 20px;
-     font-size: large;
-     font-family: 'Times New Roman', Times, serif;
-     /* font-weight:400; */
-     display: inline-block;
-     line-height: 32px;
-     font-weight:500;
-  }
-  img {
-    /* border-radius: 100%; */
-    /* width: 100px;
-    height: 100px; */
-    /* object-fit: cover;
-    float: left; */
-   /* margin-left: 200px; */
+  #blockOne #photoOne{
    display: inline-block;
-  }
-
-  #tital
-  {
-   font-weight: bolder;
-   font-size: larger;
-
-  }
-
-#paragaphstylee{
-  float: right;
-  line-height: 40px;
-
-}
-
-
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  } */
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-
-  .card-container {
-    height: 300px;
-    perspective:600;
-    position: relative;
-    width: 300px;
-  }
-   .card1 {
-    /* height: 100%; */
-    position: absolute;
-    transform-style:preserve-3d;
-    transition: all 1.5s ease-in-out;
-    width: 100%;
-    float: left;
-  }
-  .card1:hover {
-    transform: rotateY(180deg);
-  }
-  .card1 .side {
-    backface-visibility: hidden;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  }
-  .card1 .back {
-    transform:rotateY(180deg);
+    width:45%;
+    margin-left: 5%;
     
-
+  }
+  #photoOne img {
+    width: 100%;
+  }
+  /* #textOne {
+    display: inline-block;
+    width: 30%;
+  } */
+  #textOne {
+     line-height: 1.3; 
+    font-size: 21pt;
+    display: inline-block;
+    margin-left: 75px;
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    letter-spacing: 1.5px;
+    /* font-family:"Muli Regular", arial, serif; */
+    color: #787878;
+  
+  }
+   
+  #beensOne{
+    display: inline-block;
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    bottom:-150px;
+  
+  }
+  #beensOne img{
+    width: 100%;
+  }
+  
+  #blockTwo{
+    position: relative;
+    margin-top: 10%;
+  }
+  
+  #beensTwo{
+    display: inline-block;
+    width: 10%;
+    position: absolute;
+    left: 0%;
+  bottom: -600px;
+  }
+  #textTwo{
+    line-height: 1.2; 
+    font-size: 21pt;
+    display: inline-block;
+    margin-left: 10%;
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    letter-spacing: 1.5px;
+    color: #787878;
+  
+  }
+  #photoTwo{
+    display: inline-block;
+    width:45%;
+    position: absolute;
+    right: 5%;
+  }
+  #photoTwo img{
+    width: 100%;
+  }
+  #beensTwo img{
+    width: 100%;
+  }
+  
+  
+  #blockThree {
+    position: relative;
+    margin-top: 50%;
+   }
+  #blockThree #photoThree{
+   display: inline-block;
+    width:45%;
+    margin-left: 5%;
+    
+  }
+  #photoThree img {
+    width: 100%;
+  }
+  
+  #textThree {
+  
+    line-height: 1.3; 
+    font-size: 21pt;
+    display: inline-block;
+    margin-left: 75px;
+    position: absolute;
+    width: 30%;
+    top: 0%;
+    letter-spacing: 1.5px;
+    color: #787878;
+    
+  }
+  #beensThree{
+    display: inline-block;
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    bottom:-150px;
+  
+  }
+  #beensThree img{
+    width: 100%;
+  } 
+  
+  #subscripe {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+  #subscripe p{
+    display: inline-block;
+    font-size: 35pt;
+    width: 50%;
+    color: #A9855B;
+    
+  }
+  #subscripe form {
+    display:inline-block;
+  width: 45%;
+  }
+  #subscripe input {
+    display: inline-block;
+    /* margin-left: 20%; */
+  width: 50%;
+  font-size: 15pt;
+  padding: 5px;
+  border: darkgrey solid 2px;
+  border-radius: 3px;
+  }
+  #subscripe button {
+    display: inline-block;
+    /* margin-left: 40%; */
+    font-size: 15pt;
+    padding: 5px;
+    margin-left: 5%;
+    width: 25%;
+    border-radius: 3px;
+  }
+  #subscripe button:hover{
+    background-color: black;
+    color: bisque;
+  }
+  
+  h2{
+    font-size: 40pt;
+    color: #A9855B;
+    font-family: "Muli Regular", arial, serif;
   }

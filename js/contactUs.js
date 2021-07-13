@@ -32,11 +32,18 @@ const ul = document.getElementById('unlist');
 function renderFeedback() {
     for (let i = 0; i < Feedback.gloarray.length; i++) {
         const li = document.createElement('li');
+        const li2 = document.createElement('li');
         ul.appendChild(li);
+        ul.appendChild(li2);
+        li.textContent = ` - ${Feedback.gloarray[i].name} (${Feedback.gloarray[i].email}): `;
+        li2.textContent=`${Feedback.gloarray[i].message}`
+        let colorR="color:"+getRandomColor();
+        li.setAttribute("style",colorR);
+        li2.setAttribute("style",colorR);
 
-        li.textContent = ` - ${Feedback.gloarray[i].name} (${Feedback.gloarray[i].email}): ${Feedback.gloarray[i].message}`;
+      }
 
-    }
+    
 }
 //localStorage
 function saveToLs() {
@@ -58,6 +65,17 @@ function getLocalStorageFeeds() {
 getLocalStorageFeeds();
 
 renderFeedback();
+
+
+function getRandomColor() {
+  // var letters = '0123456789ABCDEF';
+  var letters =['E94560','1C9E89','123866','E29E92','000000','629E92','000080','967CA8','178E66']
+  var color = '#';
+  // for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * letters.length)];
+  // }
+  return color;
+}
 
 
 anime.timeline({loop: true})
@@ -100,3 +118,5 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 10000
   });
+
+

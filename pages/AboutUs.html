@@ -27,6 +27,7 @@
 
 
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
    <link rel="stylesheet" href="../css/AboutUs.css">
 </head>
@@ -34,31 +35,30 @@
   <header style="width: 100%;">
     <nav>
         <div>
-            <img src="../images/HomeImages/Logo-test.png" width="100px" height="100px">
-        </div>
-        <ul>
-            <li> <a href="../Index.html">
-                    <ion-icon name="cafe-outline"></ion-icon> Home
-                </a></li>
-            <li><a href="order.html">
-                    <ion-icon name="cafe-outline"></ion-icon> Store
-                </a></li>
-            <li> <a href="Blog.html">
-                    <ion-icon name="cafe-outline"></ion-icon> Blog
-                </a></li>
-            <li><a href="contactUs.html">
-                    <ion-icon name="cafe-outline"></ion-icon> Feed Back
-                </a></li>
-            <li><a href="AboutUs.html">
-                    <ion-icon name="cafe-outline"></ion-icon> About Us
-                </a></li>
-        </ul>
+            <img id="logo" src="../images/HomeImages/logo_transparent.png" width="200px" height="200px">
+            <ul>
+                <li> <a href="../Index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Home
+                    </a></li>
+                <li><a href="order.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Store
+                    </a></li>
+                <li> <a href="Blog.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Blog
+                    </a></li>
+                <li><a href="contactUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> FeedBack
+                    </a></li>
+                <li><a href="AboutUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> About Us
+                    </a></li>
+            </ul>
     </nav>
 </header>
    <main>
 <div class="about-section">
     <h1>About Us</h1>
-    <p>On this page contains the names of the developers of the site and those who contributed to building it to the fullest extent, and there is also information to contact them.</p>
+    <p>We worked as a team together. The first time we work in a team, before this course we had no experience in the field of JS, HTML, CSS, but somehow we manage our self to create this website , just to mention that everyone from a different scientific background. we worked a lot ,also we had a lots of different opinions. as a final result we end up with our coffee webpage.<br>Hope You Enjoy It</p>
 
   </div>
     <!-- <div id="article">
@@ -132,7 +132,58 @@
     
   </div>
 </main>
-<footer></footer>
+<footer>
+  <div id="contactUs">
+      <h2>CONTACT US</h2>
+      <img id="footer-logo" src="../images/HomeImages/logo_transparent.png" width="250px" height="250px" alt="">
+      <br>
+      <ul>
+          <li>
+              <ion-icon name="call-sharp"></ion-icon>+9627900000000
+          </li>
+          <br>
+          <li>
+              <ion-icon name="mail"></ion-icon>coffee-addicts@gmail.com
+          </li>
+          <br>
+
+      </ul>
+  </div>
+  <!-- <nav>
+      <ul>
+          <li> <a href="Index.html">
+                  <ion-icon name="cafe-outline"></ion-icon> Home
+              </a></li>
+          <li><a href="#">
+                  <ion-icon name="cafe-outline"></ion-icon> Store
+              </a></li>
+          <li> <a href="pages/Blog.html">
+                  <ion-icon name="cafe-outline"></ion-icon> Blog
+              </a></li>
+          <li><a href="pages/contactUs.html">
+                  <ion-icon name="cafe-outline"></ion-icon> Feed Back
+              </a></li>
+          <li><a href="#">
+                  <ion-icon name="cafe-outline"></ion-icon> About Us
+              </a></li>
+          <div>
+              <img src="images/HomeImages/Logo-test.png" width="100px" height="100px">
+          </div>
+      </ul>
+  </nav> -->
+  <div id="scrup" style="background-color: black; height: 100px;">
+
+      <p style="color: white;"> </p>
+
+      <ul id="last-footer">
+          <li style="color: white;"> &copy;2021 Coffee Addicts - All rights reserved !</li>
+          <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+      </ul>
+  </div>
+</footer>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="../js/aboutUs.js"></script>

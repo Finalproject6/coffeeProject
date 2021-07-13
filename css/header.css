@@ -19,14 +19,15 @@ header {
 width: 80%;
 background-color: #0a0a0a;
     margin: 0% auto;
-    height: 130px;
+
+    height: 110px;
 
 }
 header nav ul{
      display: inline-block;
     position: absolute;
     right: 5%;
-    top: 2%;
+    top: -12%;
     
 
 }
@@ -44,8 +45,7 @@ header ul li  {
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
-  margin-top: -35px;
-}
+  margin-top: -27px;}
 
 header ul li a {
 

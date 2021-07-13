@@ -121,13 +121,6 @@ let totalPrice = document.getElementById('totalPrice');
 let totalParagraph = document.createElement('p');
 let submit = document.createElement('button');
 
-// let cancel
-
-
-
-
-
-
 function totalSum1() {
     console.log(idArr.length);
     let finalPrice = 0;
@@ -180,6 +173,7 @@ function placeOrder (){
         swal({
             title: "Are you sure?",
             text: "Name : "+nameOfCust.value+"\nPhone Number : "+phoneNum.value+"\nAdress : "+adress.value+"\nEmail :"+email.value ,           
+
             icon: "info",
             buttons: true,
             dangerMode: true,
@@ -211,11 +205,14 @@ let nameOfCust = document.getElementById('name');
 let phoneNum = document.getElementById('phone');
 let adress = document.getElementById('adress');
 let email = document.getElementById('email')
+
 function custInfo (){
     console.log(nameOfCust.value);
     console.log(phoneNum.value);
     console.log(adress.value);
+
     console.log(email.value);
+
 
 }
 

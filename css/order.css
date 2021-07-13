@@ -9,6 +9,7 @@ body {
 
 
 
+
 main h2 {
     font-size: 60pt;    
     position: relative;    
@@ -22,6 +23,7 @@ main h2 {
 }
 main h2:nth-child(3) {
     color: gray;
+
 }
 
 
@@ -39,7 +41,9 @@ main .product {
     margin-top: 70px;
     margin-left: 70px;
     background-color: rgb(255, 255, 255); 
+
     border-radius: 8px; 
+
     width: 25%;
     
 }
@@ -129,6 +133,7 @@ main div div button:hover {
 }
 main div div button:active{
     transform: scale(.9);
+
 }
 #print div{
     /* margin-left: 50px; */
@@ -137,6 +142,8 @@ main div div button:active{
     top: -50px;
      /* margin-left: 15%; */
     margin-top: 50px; 
+
+
     border: solid 3px white; 
     width: 900px;
     padding-left: 20px;
@@ -221,9 +228,6 @@ main div div button:active{
     position: relative;
     top: -30px;  
     left: 15%;
-    
-       
-    
     font-size: 30pt;
     background-color:white; 
    
@@ -275,7 +279,50 @@ main div div button:active{
 }
 #forms h6:nth-child(2){
     color: rgb(146, 145, 145);
+
 }
+#totalPrice button {
+    font-size: 15pt;
+    position: relative;
+    top: -5px;
+    left: 100px;
+    padding: 10px;
+    background-color: #228b22;
+    color: white;
+    border-radius: 7px;
+}
+#form fieldset *{ 
+    display: inline-block;
+}
+
+#form fieldset {
+    border: solid 3px black;
+    border-radius: 7px;
+    padding: 10px;    
+    width: 900px;
+    margin-left: 15%;
+    margin-bottom: 60px;
+    align-content: center;  
+    /* position: relative;
+    top: 150px; */
+    
+     
+   
+} 
+#form fieldset input {
+    width: 30%;
+    /* margin-bottom: 20px; */
+    margin-left: 20px;
+    padding-left: 20px;
+     
+} 
+#form fieldset button {
+    display: inline-block;
+    position: absolute;
+    
+}
+
+
 
 #form fieldset *{ 
     display: inline-block;

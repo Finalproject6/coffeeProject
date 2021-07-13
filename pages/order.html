@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="../css/header.css">
+
+    <link rel="stylesheet" href="../css/footer.css">
+
     <link rel="stylesheet" href="../css/order.css">
 </head>
 
@@ -25,33 +28,41 @@
     <header style="width: 100%;">
         <nav>
             <div>
-                <img src="../images/HomeImages/Logo-test.png" width="100px" height="100px">
-            </div>
-            <ul>
-                <li> <a href="../Index.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Home
-                    </a></li>
-                <li><a href="../pages/order.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Store
-                    </a></li>
-                <li> <a href="../pages/Blog.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Blog
-                    </a></li>
-                <li><a href="../pages/contactUs.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
-                    </a></li>
-                <li><a href="../pages/AboutUs.html">
-                        <ion-icon name="cafe-outline"></ion-icon> About Us
-                    </a></li>
-            </ul>
+
+                <img id="logo" src="../images/HomeImages/logo_transparent.png" width="160px" height="160px">
+                <ul>
+                    <li> <a href="../Index.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Home
+                        </a></li>
+                    <li><a href="order.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Store
+                        </a></li>
+                    <li> <a href="Blog.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Blog
+                        </a></li>
+                    <li><a href="contactUs.html">
+                            <ion-icon name="cafe-outline"></ion-icon> FeedBack
+                        </a></li>
+                    <li><a href="AboutUs.html">
+                            <ion-icon name="cafe-outline"></ion-icon> About Us
+                        </a></li>
+                </ul>
+
         </nav>
     </header>
     <main>
+        
+          <div id="ourProduct">
+        </div> 
+         <div class="main">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+        </div> 
+        <h2>Our</h2> 
+        <h2>Product</h2> 
 
-        <!-- <img id="mainHeadPic" src="../images/order/headerOrderPage.jpg" alt="header img"> -->
-        <div id="ourProduct">
-        </div>
-        <h2>Our Product</h2>
 
         <div id="allProduct">
             <a href="#print">
@@ -106,6 +117,27 @@
                 <p class="size">1 pack is 250g</p>
                 <button id="pro6">ADD CART</button>
             </div>
+         
+        </div>
+        <div id="forms">
+            <h6>YOUR</h6>
+            <h6 id="details">DETAILS</h6>
+            <form id="form">
+                <fieldset>
+                   
+                    <input type="text" required id="name" placeholder="Name">
+
+                    <input type="number" id="phone" placeholder="Phone Number">
+
+                    <input type="email" id="email" placeholder="Email">
+
+                    <input type="text" id="adress" placeholder="Adress">
+
+                    <br>
+
+                </fieldset>
+            </form>
+
         </div>
         <div id="form">
             <form id="form">
@@ -142,7 +174,56 @@
     </main>
 
     <footer>
+        <div id="contactUs">
+            <h2>CONTACT US</h2>
+            <img id="footer-logo" src="../images/HomeImages/logo_transparent.png" width="250px" height="250px" alt="">
+            <br>
+            <ul>
+                <li>
+                    <ion-icon name="call-sharp"></ion-icon>+9627900000000
+                </li>
+                <br>
+                <li>
+                    <ion-icon name="mail"></ion-icon>coffee-addicts@gmail.com
+                </li>
+                <br>
 
+            </ul>
+        </div>
+        <!-- <nav>
+            <ul>
+                <li> <a href="Index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Home
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe-outline"></ion-icon> Store
+                    </a></li>
+                <li> <a href="pages/Blog.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Blog
+                    </a></li>
+                <li><a href="pages/contactUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe-outline"></ion-icon> About Us
+                    </a></li>
+                <div>
+                    <img src="images/HomeImages/Logo-test.png" width="100px" height="100px">
+                </div>
+            </ul>
+        </nav> -->
+        <div id="scrup" style="background-color: black; height: 100px;">
+
+            <p style="color: white;"> </p>
+
+            <ul id="last-footer">
+                <li style="color: white;"> &copy;2021 Coffee Addicts - All rights reserved !</li>
+                <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
     </footer>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/cart.js"></script>

@@ -26,10 +26,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
 <!-- ======================================= -->
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/contactUsMain.css">
 </head>
 
@@ -37,25 +42,24 @@
     <header style="width: 100%;">
         <nav>
             <div>
-                <img src="../images/HomeImages/Logo-test.png" width="100px" height="100px">
-            </div>
-            <ul>
-                <li> <a href="../Index.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Home
-                    </a></li>
-                <li><a href="../pages/order.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Store
-                    </a></li>
-                <li> <a href="../pages/Blog.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Blog
-                    </a></li>
-                <li><a href="contactUs.html">
-                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
-                    </a></li>
-                <li><a href="../pages/AboutUs.html">
-                        <ion-icon name="cafe-outline"></ion-icon> About Us
-                    </a></li>
-            </ul>
+                <img id="logo" src="../images/HomeImages/logo_transparent.png" width="160px" height="160px">
+                <ul>
+                    <li> <a href="../Index.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Home
+                        </a></li>
+                    <li><a href="order.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Store
+                        </a></li>
+                    <li> <a href="Blog.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Blog
+                        </a></li>
+                    <li><a href="contactUs.html">
+                            <ion-icon name="cafe-outline"></ion-icon> FeedBack
+                        </a></li>
+                    <li><a href="AboutUs.html">
+                            <ion-icon name="cafe-outline"></ion-icon> About Us
+                        </a></li>
+                </ul>
         </nav>
     </header>
     <main>
@@ -76,27 +80,6 @@
 
         </section>
 
-        <!-- <section id="contactInfo">
-            <div>
-
-                <h2>Contact us</h2>
-                
-                <ul>
-                    <img src="../images/contactUS/mail.svg">
-                    <p>Coffee@mail.com</p>
-                </ul>
-                <ul>
-                    <img src="../images/contactUS/call.svg">
-                    <p>+05-666666</p>
-                </ul>         
-            </div>
-            <div>
-
-                <img id="contactUsImg" src="https://www.lasalleamman.com/sites/default/files/2020-04/contact-us.jpg">
-                
-            </div>    
-        </section> -->
-
         <section id="feeds">
             <div id="inputFeedback">
 
@@ -113,8 +96,10 @@
                     </fieldset>
                 </form>
             </div>
+            <h2>What Our Customer Says ...</h2>
             <div id="listFeedback">
                 <ul id="unlist">
+                    <li></li>
                 </ul>
             </div>
         </section>
@@ -122,6 +107,56 @@
 
     </main>
     <footer>
+        <div id="contactUs">
+            <h2>CONTACT US</h2>
+            <img id="footer-logo" src="../images/HomeImages/logo_transparent.png" width="250px" height="250px" alt="">
+            <br>
+            <ul>
+                <li>
+                    <ion-icon name="call-sharp"></ion-icon>+9627900000000
+                </li>
+                <br>
+                <li>
+                    <ion-icon name="mail"></ion-icon>coffee-addicts@gmail.com
+                </li>
+                <br>
+
+            </ul>
+        </div>
+        <!-- <nav>
+            <ul>
+                <li> <a href="Index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Home
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe-outline"></ion-icon> Store
+                    </a></li>
+                <li> <a href="pages/Blog.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Blog
+                    </a></li>
+                <li><a href="pages/contactUs.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Feed Back
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe-outline"></ion-icon> About Us
+                    </a></li>
+                <div>
+                    <img src="images/HomeImages/Logo-test.png" width="100px" height="100px">
+                </div>
+            </ul>
+        </nav> -->
+        <div id="scrup" style="background-color: black; height: 100px;">
+
+            <p style="color: white;"> </p>
+
+            <ul id="last-footer">
+                <li style="color: white;"> &copy;2021 Coffee Addicts - All rights reserved !</li>
+                <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
     </footer>
     <script src="../js/contactUs.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

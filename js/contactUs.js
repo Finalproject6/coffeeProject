@@ -29,12 +29,33 @@ function handelSubmit(event) {
 console.log(Feedback.gloarray);
 const ul = document.getElementById('unlist');
 //render feeds
-function renderFeedback() {
-    for (let i = 0; i < Feedback.gloarray.length; i++) {
-        const li = document.createElement('li');
-        ul.appendChild(li);
 
-        li.textContent = ` - ${Feedback.gloarray[i].name} (${Feedback.gloarray[i].email}): ${Feedback.gloarray[i].message}`;
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+console.log(getRandomColor());
+function renderFeedback() {
+  for (let i = 0; i < Feedback.gloarray.length; i++) {
+      
+      
+        const li1 = document.createElement('li');
+        const li2 = document.createElement('li');
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        let color = 'color:'+getRandomColor()
+        console.log(color);
+        // let br = document.createElement('br');
+
+        li1.textContent = "- "+Feedback.gloarray[i].name+ "("+Feedback.gloarray[i].email+"):";
+        li2.textContent = `  ${Feedback.gloarray[i].message}`;
+        li1.setAttribute('style',color);
+        li2.setAttribute('style',color);
 
     }
 }

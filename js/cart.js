@@ -10,7 +10,7 @@ function Product(path, name, price) {
 
 };
 let globArr = [];
-let btnArr = ['pro1', 'pro2', 'pro3', 'pro4', 'pro5', 'pro6']
+let btnArr = ['pro1', 'pro2', 'pro3', 'pro4', 'pro5', 'pro6',];
 
 new Product('../images/order/31301_Mild_250g_Macinato-MOKA.jpg', 'Mild Coffee', 10);
 new Product('../images/order/bleeding utopia.jpg', 'Black Cofee', 12);
@@ -18,6 +18,7 @@ new Product('../images/order/TH-Coarse-Grind-300g-Medium.jpg', 'Blue Mountain Co
 new Product('../images/order/zoroy_the_finesse_arabica_ground_coffee.jpg', 'zoroy Arabic Coffee', 16);
 new Product('../images/order/31506_MiTul-bio_250g_Macinato-MOKA.jpg', 'Mitul Coffee', 18);
 new Product('../images/order/Bulletproof.jpg', 'Bulletproof Coffee', 25);
+
 console.log(globArr);
 let idArr = [];
 // console.log(typeof gloArr[0].quant);
@@ -119,6 +120,7 @@ function handelClick(event) {
 let totalPrice = document.getElementById('totalPrice');
 let totalParagraph = document.createElement('p');
 let submit = document.createElement('button');
+
 // let cancel
 
 
@@ -177,7 +179,7 @@ function placeOrder (){
 
         swal({
             title: "Are you sure?",
-            text: "Name : "+nameOfCust.value+"\nPhone Number : "+phoneNum.value+"\nAdress : "+adress.value ,           
+            text: "Name : "+nameOfCust.value+"\nPhone Number : "+phoneNum.value+"\nAdress : "+adress.value+"\nEmail :"+email.value ,           
             icon: "info",
             buttons: true,
             dangerMode: true,
@@ -208,10 +210,13 @@ function placeOrder (){
 let nameOfCust = document.getElementById('name');
 let phoneNum = document.getElementById('phone');
 let adress = document.getElementById('adress');
+let email = document.getElementById('email')
 function custInfo (){
     console.log(nameOfCust.value);
     console.log(phoneNum.value);
     console.log(adress.value);
+    console.log(email.value);
+
 }
 
 

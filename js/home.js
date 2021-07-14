@@ -107,7 +107,7 @@ let imagMorningArray = ['images/HomeImages/traditional-drip.png', 'images/HomeIm
 let imagAfterNoonArray = ['images/HomeImages/capuccino.png', 'images/HomeImages/latte2.png'];
 let imagEveningArray = ['images/HomeImages/home-3-icon-img-5.png', 'images/HomeImages/home-3-icon-image-6.png'];
 let pMorningArray = ['Enjoy your morning with this traditional trurkish coffee drip', 'Enjoy your morning with a cup of Espresso, Waking up is 100% guarenteed']
-let pAfterNoonArray = ['Do you love morning capuccino? Yes, but you still did not figure it out', 'LATE, it will alwayes fit for the evening time']
+let pAfterNoonArray = ['Do you love afternoon capuccino? Yes, but you still did not figure it out', 'LATE, it will alwayes fit for the afternoon time']
 let pEveningArray = ['Nothing is better than a FRAPE at the evening, enjoy it', 'Set your mood to be high, Get your self a cup MOCHA',]
 let imageElement = document.getElementById('imageDrink');
 let headdingText = document.getElementById('TimeTag');
@@ -132,18 +132,18 @@ function renderDrink() {
     paragraphText.textContent = pMorningArray[x];
 
   }
-  else if (currentTime >= 12 && currentTime<17) {
+  else if (currentTime >= 12 && currentTime < 17) {
     imageElement.setAttribute('src', imagAfterNoonArray[x]);
     headdingText.textContent = " IT's Afternoon Time !";
     paragraphText.textContent = pAfterNoonArray[x];
-    
+
   }
   else if (currentTime >= 17) {
 
     imageElement.setAttribute('src', imagEveningArray[x]);
     headdingText.textContent = " IT's Evening Time!";
     paragraphText.textContent = pEveningArray[x];
-    
+
 
   }
 }

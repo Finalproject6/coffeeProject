@@ -81,9 +81,11 @@ function handelClick(event) {
                     }
                     console.log(idArr);
                     console.log(idArr.value);
+                    if(idArr.length==0){
+                        globArr[i].quant=0;
+                    }
 
                 }
-
 
                 totalSum1()
             }

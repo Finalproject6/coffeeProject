@@ -196,7 +196,7 @@ main {
     font-size: 15pt;
     font-weight: bolder;
 }
-#listFeedback ul li:nth-child(even) {
+#listFeedback ul li:nth-child(odd) {
     margin-top: 30px;
     margin-left: 40px;
     line-height: 1.4;
